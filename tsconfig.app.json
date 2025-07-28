@@ -1,0 +1,10 @@
+{
+  "$schema": "./schemas/tsconfig",
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  },
+  "include": ["src"]
+}
