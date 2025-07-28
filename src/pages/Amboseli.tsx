@@ -74,7 +74,7 @@ export const Amboseli = () => {
 
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/133325/pexels-photo-133325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="/Amboseli Attractions Elephant herds.jpg"
                 alt="A herd of elephants in Amboseli"
                 className="w-full h-64 object-cover"
               />

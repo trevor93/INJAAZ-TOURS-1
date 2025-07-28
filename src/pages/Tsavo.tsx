@@ -60,7 +60,7 @@ export const Tsavo = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="/Tsavo East.jpg"
                 alt="A cheetah in Tsavo East"
                 className="w-full h-64 object-cover"
               />
@@ -95,7 +95,7 @@ export const Tsavo = () => {
 
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="/Tsavo west.jpg"
                 alt="Elephants in Tsavo West"
                 className="w-full h-64 object-cover"
               />
