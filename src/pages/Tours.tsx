@@ -60,7 +60,7 @@ export const Tours = () => {
     <div className="min-h-screen py-20 bg-gradient-to-br from-amber-50 to-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-green-800 mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-green-800 mb-6">
             {language === 'en' ? 'Tours' : 'الجولات'}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -70,7 +70,7 @@ export const Tours = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {tourCategories.map((tour, index) => (
             <Link
               key={index}
@@ -128,7 +128,7 @@ export const Tours = () => {
               ? 'Let us help you design the perfect trip for your needs'
               : 'دعنا نساعدك في تصميم الرحلة المثالية حسب احتياجاتك'}
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col md:flex-row justify-center gap-4">
             <Link
               to="/request-quote"
               className="bg-yellow-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-600 transition-colors"

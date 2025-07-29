@@ -89,7 +89,7 @@ export const AboutUs = () => {
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 text-white">
           <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
               {language === 'en' ? 'About Injaaz Tours' : 'عن إنجاز للسياحة'}
             </h1>
             <div className="max-w-4xl mx-auto">
@@ -109,7 +109,7 @@ export const AboutUs = () => {
 
         {/* Statistics */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat) => (
               <div key={stat.labelKey} className="text-center">
                 <div className="bg-white rounded-xl shadow-lg p-8">
@@ -128,7 +128,7 @@ export const AboutUs = () => {
             <p className="text-xl text-gray-200">{language === 'en' ? 'The principles that guide our every decision.' : 'المبادئ التي توجه كل قرار نتخذه.'}</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value) => (
               <div key={value.titleKey} className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
                 <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
@@ -148,7 +148,7 @@ export const AboutUs = () => {
             <p className="text-xl text-gray-200">{language === 'en' ? 'The passionate professionals behind your unforgettable journeys.' : 'المحترفون الشغوفون وراء رحلاتك التي لا تُنسى.'}</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {team.map((member) => (
               <div key={member.name} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <img
@@ -169,7 +169,7 @@ export const AboutUs = () => {
         {/* Mission & Vision */}
         <div className="bg-black/20 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="text-white">
                 <h2 className="text-4xl font-bold mb-8">{language === 'en' ? 'Our Mission & Vision' : 'مهمتنا ورؤيتنا'}</h2>
                 <div className="mb-8">
@@ -204,7 +204,7 @@ export const AboutUs = () => {
                 ? 'Let us design an unforgettable travel experience for you in the beautiful heart of Africa.'
                 : 'دعنا نصمم لك تجربة سياحية لا تُنسى في قلب أفريقيا الجميلة.'}
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <div className="flex flex-col md:flex-row justify-center gap-4">
               <Link
                 to="/request-quote"
                 className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-yellow-500 hover:to-yellow-700 transition-all transform hover:scale-105"

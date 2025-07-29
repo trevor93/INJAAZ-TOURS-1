@@ -8,13 +8,13 @@ export const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-green-900 to-green-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <img src="/IMG-20250721-WA0001.jpg" alt="Injaaz Logo" className="h-16 w-auto" />
+              <img src="/IMG-20250721-WA0001.jpg" alt="Injaaz Logo" className="h-12 md:h-16 w-auto" />
             </div>
-            <p className="text-green-100 text-sm">
+            <p className="text-green-100 text-sm leading-relaxed">
               {language === 'en' ? 'Injaaz is a leading tour agency in Kenya, specializing in luxury and customized travel experiences for Arab travelers. We believe that tourism should be a transformative experience that combines natural beauty, local culture, and authentic hospitality.' : 'إنجاز هي وكالة سياحية رائدة في كينيا، متخصصة في تقديم تجارب سياحية فاخرة ومخصصة للمسافرين العرب. نحن نؤمن بأن السياحة يجب أن تكون تجربة تحويلية تجمع بين الجمال الطبيعي والثقافة المحلية والضيافة الأصيلة.'}
             </p>
           </div>
@@ -31,7 +31,7 @@ export const Footer = () => {
           </div>
 
           {/* Destinations */}
-          <div>
+          <div className="md:col-span-1">
             <h4 className="text-lg font-semibold mb-4">{language === 'en' ? 'Destinations' : 'الوجهات'}</h4>
             <ul className="space-y-2 text-sm">
               <li key="/destinations/maasai-mara"><Link to="/destinations/maasai-mara" className="text-green-100 hover:text-yellow-400 transition-colors">{language === 'en' ? 'Maasai Mara' : 'ماساي مارا'}</Link></li>
@@ -42,7 +42,7 @@ export const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="md:col-span-2 lg:col-span-1">
             <h4 className="text-lg font-semibold mb-4">{language === 'en' ? 'Contact Us' : 'اتصل بنا'}</h4>
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
@@ -62,7 +62,7 @@ export const Footer = () => {
             {/* Social Links */}
             <div className="mt-6">
               <h5 className="font-medium mb-3">{language === 'en' ? 'Follow Us' : 'تابعنا'}</h5>
-              <div className="flex space-x-4 rtl:space-x-reverse">
+              <div className="flex space-x-4 rtl:space-x-reverse justify-start">
                 <a href="https://wa.me/254712346678" target="_blank" rel="noopener noreferrer" className="text-green-100 hover:text-yellow-400 transition-colors">
                   <WhatsApp className="h-5 w-5" />
                 </a>
@@ -83,7 +83,7 @@ export const Footer = () => {
         {/* Payment Methods */}
         <div className="mt-12 pt-8 border-t border-green-700">
           <h4 className="text-lg font-semibold mb-4 text-center">{language === 'en' ? 'Payment Methods' : 'طرق الدفع'}</h4>
-          <div className="flex justify-center items-center space-x-8 rtl:space-x-reverse mb-6">
+          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 lg:gap-8 mb-6">
             <div className="bg-white rounded-lg p-3 shadow-lg">
               <span className="text-blue-600 font-bold text-sm">VISA</span>
             </div>

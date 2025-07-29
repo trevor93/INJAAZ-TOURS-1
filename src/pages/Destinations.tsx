@@ -73,7 +73,7 @@ export const Destinations = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-green-800 mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-green-800 mb-6">
             {language === 'en' ? 'Destinations' : 'الوجهات'}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -82,7 +82,7 @@ export const Destinations = () => {
         </div>
 
         {/* Destinations Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {destinations.map((destination, index) => (
             <Link
               key={index}
@@ -112,7 +112,7 @@ export const Destinations = () => {
                 </p>
                 
                 {/* Info Grid */}
-                <div className="grid grid-cols-2 gap-4 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center text-sm text-gray-500">
                     <Clock className="h-4 w-4 ml-2 text-yellow-500" />
                     <span className="mr-2">{language === 'en' ? 'Duration:' : 'المدة:'}</span>
@@ -156,7 +156,7 @@ export const Destinations = () => {
           <p className="text-xl mb-8 text-green-100">
             {language === 'en' ? 'Let us help you plan your dream trip to Kenya' : 'دعنا نساعدك في التخطيط لرحلة أحلامك إلى كينيا'}
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col md:flex-row justify-center gap-4">
             <Link
               to="/request-quote"
               className="bg-yellow-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-600 transition-colors"

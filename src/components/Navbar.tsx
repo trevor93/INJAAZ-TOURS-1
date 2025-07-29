@@ -12,14 +12,14 @@ export const Navbar = () => {
   return (
     <nav className="bg-gradient-to-br from-green-900 to-green-800 shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-2">
+        <div className="flex justify-between items-center py-3 lg:py-2">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src="/IMG-20250721-WA0001.jpg" alt="Injaaz Logo" className="h-16 w-auto" />
+            <img src="/IMG-20250721-WA0001.jpg" alt="Injaaz Logo" className="h-12 sm:h-14 lg:h-16 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
+          <div className="hidden lg:flex items-center space-x-8 rtl:space-x-reverse">
             <Link to="/" className="text-white hover:text-gray-200 font-medium transition-colors">
               {language === 'en' ? 'Home' : 'الرئيسية'}
             </Link>
@@ -87,17 +87,17 @@ export const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-3">
+          <div className="lg:hidden flex items-center space-x-3">
             <button
               onClick={toggleLanguage}
-              className="flex items-center bg-white/20 text-white px-2 py-1 rounded-full"
+              className="flex items-center bg-white/20 text-white px-3 py-2 rounded-full text-sm"
             >
               <Globe className="h-4 w-4" />
-              <span className="text-xs ml-1">{language === 'ar' ? 'EN' : 'عربي'}</span>
+              <span className="text-sm ml-1">{language === 'ar' ? 'EN' : 'عربي'}</span>
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-gray-200"
+              className="text-white hover:text-gray-200 p-2"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -106,51 +106,51 @@ export const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-gradient-to-br from-green-900 to-green-800 border-t">
-              <Link to="/" className="block px-3 py-2 text-white hover:text-gray-200" onClick={() => setIsOpen(false)}>
+          <div className="lg:hidden">
+            <div className="px-4 pt-4 pb-6 space-y-2 bg-gradient-to-br from-green-900 to-green-800 border-t border-green-700">
+              <Link to="/" className="block px-4 py-3 text-white hover:text-gray-200 text-lg" onClick={() => setIsOpen(false)}>
                 {language === 'en' ? 'Home' : 'الرئيسية'}
               </Link>
 
               {/* Tours Mobile Dropdown */}
               <div>
-                <button onClick={() => { setIsToursOpen(!isToursOpen); setIsDestinationsOpen(false); }} className="w-full flex justify-between items-center px-3 py-2 text-white hover:text-gray-200">
+                <button onClick={() => { setIsToursOpen(!isToursOpen); setIsDestinationsOpen(false); }} className="w-full flex justify-between items-center px-4 py-3 text-white hover:text-gray-200 text-lg">
                   {language === 'en' ? 'Tours' : 'الجولات'}
                   <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${isToursOpen ? 'rotate-180' : ''}`} />
                 </button>
                 {isToursOpen && (
-                  <div className="pl-4 border-l-2 border-green-700 ml-3">
-                    <Link to="/tours/safari" className="block px-4 py-2 text-white hover:bg-green-800" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Safari Tours' : 'جولات السفاري'}</Link>
-                    <Link to="/tours/luxury" className="block px-4 py-2 text-white hover:bg-green-800" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Luxury Safaris' : 'السفاري الفاخرة'}</Link>
-                    <Link to="/tours/budget" className="block px-4 py-2 text-white hover:bg-green-800" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Budget Safaris' : 'السفاري الاقتصادية'}</Link>
-                    <Link to="/tours/custom" className="block px-4 py-2 text-white hover:bg-green-800" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Custom Packages' : 'باقات مخصصة'}</Link>
+                  <div className="pl-6 border-l-2 border-green-700 ml-4 space-y-1">
+                    <Link to="/tours/safari" className="block px-4 py-2 text-white hover:bg-green-800 text-base" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Safari Tours' : 'جولات السفاري'}</Link>
+                    <Link to="/tours/luxury" className="block px-4 py-2 text-white hover:bg-green-800 text-base" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Luxury Safaris' : 'السفاري الفاخرة'}</Link>
+                    <Link to="/tours/budget" className="block px-4 py-2 text-white hover:bg-green-800 text-base" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Budget Safaris' : 'السفاري الاقتصادية'}</Link>
+                    <Link to="/tours/custom" className="block px-4 py-2 text-white hover:bg-green-800 text-base" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Custom Packages' : 'باقات مخصصة'}</Link>
                   </div>
                 )}
               </div>
 
               {/* Destinations Mobile Dropdown */}
               <div>
-                <button onClick={() => { setIsDestinationsOpen(!isDestinationsOpen); setIsToursOpen(false); }} className="w-full flex justify-between items-center px-3 py-2 text-white hover:text-gray-200">
+                <button onClick={() => { setIsDestinationsOpen(!isDestinationsOpen); setIsToursOpen(false); }} className="w-full flex justify-between items-center px-4 py-3 text-white hover:text-gray-200 text-lg">
                   {language === 'en' ? 'Destinations' : 'الوجهات'}
                   <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${isDestinationsOpen ? 'rotate-180' : ''}`} />
                 </button>
                 {isDestinationsOpen && (
-                  <div className="pl-4 border-l-2 border-green-700 ml-3">
-                    <Link to="/destinations/maasai-mara" className="block px-4 py-2 text-white hover:bg-green-800" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Maasai Mara' : 'ماساي مارا'}</Link>
-                    <Link to="/destinations/amboseli" className="block px-4 py-2 text-white hover:bg-green-800" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Amboseli' : 'أمبوسيلي'}</Link>
-                    <Link to="/destinations/tsavo" className="block px-4 py-2 text-white hover:bg-green-800" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Tsavo' : 'تسافو'}</Link>
-                    <Link to="/destinations/diani-beach" className="block px-4 py-2 text-white hover:bg-green-800" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Diani Beach' : 'شاطئ ديان'}</Link>
+                  <div className="pl-6 border-l-2 border-green-700 ml-4 space-y-1">
+                    <Link to="/destinations/maasai-mara" className="block px-4 py-2 text-white hover:bg-green-800 text-base" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Maasai Mara' : 'ماساي مارا'}</Link>
+                    <Link to="/destinations/amboseli" className="block px-4 py-2 text-white hover:bg-green-800 text-base" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Amboseli' : 'أمبوسيلي'}</Link>
+                    <Link to="/destinations/tsavo" className="block px-4 py-2 text-white hover:bg-green-800 text-base" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Tsavo' : 'تسافو'}</Link>
+                    <Link to="/destinations/diani-beach" className="block px-4 py-2 text-white hover:bg-green-800 text-base" onClick={() => setIsOpen(false)}>{language === 'en' ? 'Diani Beach' : 'شاطئ ديان'}</Link>
                   </div>
                 )}
               </div>
 
-              <Link to="/about" className="block px-3 py-2 text-white hover:text-gray-200" onClick={() => setIsOpen(false)}>
+              <Link to="/about" className="block px-4 py-3 text-white hover:text-gray-200 text-lg" onClick={() => setIsOpen(false)}>
                 {language === 'en' ? 'About Us' : 'من نحن'}
               </Link>
-              <Link to="/contact" className="block px-3 py-2 text-white hover:text-gray-200" onClick={() => setIsOpen(false)}>
+              <Link to="/contact" className="block px-4 py-3 text-white hover:text-gray-200 text-lg" onClick={() => setIsOpen(false)}>
                 {language === 'en' ? 'Contact' : 'اتصل بنا'}
               </Link>
-              <Link to="/request-quote" className="block px-3 py-2 bg-yellow-500 text-white rounded-lg text-center" onClick={() => setIsOpen(false)}>
+              <Link to="/request-quote" className="block px-4 py-3 bg-yellow-500 text-white rounded-lg text-center mx-4 mt-4 text-lg font-semibold" onClick={() => setIsOpen(false)}>
                 {language === 'en' ? 'Request Quote' : 'طلب عرض سعر'}
               </Link>
             </div>

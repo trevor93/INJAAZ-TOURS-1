@@ -83,7 +83,7 @@ export const RequestQuote = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
             {language === 'en' ? 'Request a Quote' : 'طلب عرض سعر'}
           </h1>
           <p className="text-xl text-gray-200 leading-relaxed">
@@ -94,15 +94,15 @@ export const RequestQuote = () => {
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+        <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 md:p-12">
           {/* Personal Information */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-green-800 mb-6 flex items-center">
+            <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-6 flex items-center">
               <Users className="h-6 w-6 ml-3 text-yellow-600" />
               {language === 'en' ? 'Personal Information' : 'المعلومات الشخصية'}
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   {language === 'en' ? 'Name' : 'الاسم'} *
@@ -166,12 +166,12 @@ export const RequestQuote = () => {
 
           {/* Trip Details */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-green-800 mb-6 flex items-center">
+            <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-6 flex items-center">
               <Calendar className="h-6 w-6 ml-3 text-yellow-600" />
               {language === 'en' ? 'Trip Details' : 'تفاصيل الرحلة'}
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   {language === 'en' ? 'Group Size' : 'حجم المجموعة'} *
@@ -281,12 +281,12 @@ export const RequestQuote = () => {
 
           {/* Destinations */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-green-800 mb-6 flex items-center">
+            <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-6 flex items-center">
               <MapPin className="h-6 w-6 ml-3 text-yellow-600" />
               {language === 'en' ? 'Desired Destinations' : 'الوجهات المرغوبة'}
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {destinations.map((destination) => (
                 <label key={destination.id} className="flex items-center space-x-3 rtl:space-x-reverse p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
                   <input
@@ -304,12 +304,12 @@ export const RequestQuote = () => {
 
           {/* Interests */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-green-800 mb-6 flex items-center">
+            <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-6 flex items-center">
               <Clock className="h-6 w-6 ml-3 text-yellow-600" />
               {language === 'en' ? 'Interests' : 'الاهتمامات'}
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {interests.map((interest) => (
                 <label key={interest.id} className="flex items-center space-x-3 rtl:space-x-reverse p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
                   <input
@@ -327,7 +327,7 @@ export const RequestQuote = () => {
 
           {/* Special Requests */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-green-800 mb-6">{language === 'en' ? 'Special Requests' : 'طلبات خاصة'}</h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-6">{language === 'en' ? 'Special Requests' : 'طلبات خاصة'}</h2>
             <textarea
               name="specialRequests"
               value={formData.specialRequests}
@@ -360,7 +360,7 @@ export const RequestQuote = () => {
           <p className="text-lg mb-6">
             {language === 'en' ? 'Our team of experts is ready to assist you every step of the way in planning your trip' : 'فريق خبرائنا جاهز لمساعدتك في كل خطوة من خطوات التخطيط لرحلتك'}
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col md:flex-row justify-center gap-4">
             <a
               href="https://wa.me/254712346678"
               target="_blank"

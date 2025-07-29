@@ -6,7 +6,7 @@ export const Hero = () => {
   const { language } = useLanguage();
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-screen sm:h-screen overflow-hidden">
       <img
         src="/Cheetah Running Home page. Hero section.jpg"
         alt="Cheetah running in the African savanna"
@@ -16,18 +16,18 @@ export const Hero = () => {
 
       {/* Hero Content */}
       <div className="absolute inset-0 flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="max-w-3xl mx-auto lg:mx-0 text-center lg:text-left px-4 sm:px-0">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
               {language === 'en' ? 'Welcome to Injaaz' : 'مرحباً بكم في إنجاز'}
             </h1>
-            <p className="text-xl md:text-2xl text-yellow-300 mb-4 font-medium">
+            <p className="text-xl sm:text-2xl md:text-2xl text-yellow-300 mb-3 sm:mb-4 font-medium">
               {language === 'en' ? 'Premium Tour Agency in Kenya' : 'وكالة الجولات السياحية الفاخرة في كينيا'}
             </p>
-            <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed">
               {language === 'en' ? 'Discover the enchanting beauty of Kenya with Injaaz. We offer unforgettable travel experiences that combine luxury with authenticity, from Maasai Mara safaris to the golden beaches of Diani.' : 'اكتشف جمال كينيا الساحر مع إنجاز. نقدم لك تجارب سياحية لا تُنسى تجمع بين الفخامة والأصالة، من سفاري ماساي مارا إلى شواطئ ديان الذهبية.'}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-4">
               <Link
                 to="/tours"
                 className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-yellow-500 hover:to-yellow-700 transition-all transform hover:scale-105 text-center"

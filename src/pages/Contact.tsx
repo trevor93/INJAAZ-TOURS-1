@@ -41,7 +41,7 @@ export const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
             {language === 'en' ? 'Contact Us' : 'اتصل بنا'}
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
@@ -51,11 +51,11 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h2 className="text-3xl font-bold text-green-800 mb-8">{language === 'en' ? 'Contact Information' : 'معلومات التواصل'}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-8">{language === 'en' ? 'Contact Information' : 'معلومات التواصل'}</h2>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4 rtl:space-x-reverse">
@@ -75,7 +75,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">{language === 'en' ? 'Email' : 'البريد الإلكتروني'}</h3>
-                    <p className="text-gray-600">info@injaazagency.com</p>
+                    <p className="text-gray-600 break-all">info@injaazagency.com</p>
                     <p className="text-sm text-gray-500">{language === 'en' ? 'Quick response within 24 hours' : 'رد سريع خلال 24 ساعة'}</p>
                   </div>
                 </div>
@@ -132,7 +132,7 @@ export const Contact = () => {
 
           {/* Contact Form */}
           <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h2 className="text-3xl font-bold text-green-800 mb-8">{language === 'en' ? 'Send us a Message' : 'أرسل لنا رسالة'}</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-8">{language === 'en' ? 'Send us a Message' : 'أرسل لنا رسالة'}</h2>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -211,8 +211,8 @@ export const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors resize-none"
+                    rows={5}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors resize-none"
                   placeholder={language === 'en' ? 'Write your message here...' : 'اكتب رسالتك هنا...'}
                 />
               </div>
@@ -230,15 +230,15 @@ export const Contact = () => {
 
         {/* Additional Info */}
         <div className="mt-20 bg-black/20 backdrop-blur-sm rounded-2xl p-12 text-white text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
             {language === 'en' ? 'We Look Forward to Hearing From You!' : 'نتطلع للسماع منك!'}
           </h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             {language === 'en'
               ? 'Our team of experts is ready to help you plan your dream trip to Kenya. Contact us today and let\'s start making unforgettable memories.'
               : 'فريقنا من الخبراء جاهز لمساعدتك في تخطيط رحلة أحلامك إلى كينيا. تواصل معنا اليوم ودعنا نبدأ في صنع ذكريات لا تُنسى.'}
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col md:flex-row justify-center gap-4">
             <a
               href="tel:+254712346678"
               className="bg-yellow-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-600 transition-colors"
