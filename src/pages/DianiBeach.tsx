@@ -21,11 +21,13 @@ export const DianiBeach = () => {
         {/* Hero Section */}
         <div className="relative rounded-2xl overflow-hidden mb-20">
           <img
-            src="/Diani Beach.jpg"
+            src="/Diani Beach copy.jpg"
             alt="Luxury beach resort at Diani Beach"
-            className="w-full h-96 object-cover object-center"
+            className="w-full h-96 object-cover object-center brightness-110 contrast-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+          {/* Additional brightness overlay */}
+          <div className="absolute inset-0 bg-white/5" />
           <div className="absolute bottom-8 left-8 right-8 text-white">
             <h2 className="text-3xl font-bold mb-4">{language === 'en' ? 'The Most Beautiful Beach in Africa' : 'الشاطئ الأجمل في أفريقيا'}</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
@@ -151,9 +153,9 @@ export const DianiBeach = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all">
               <img
-                src="/Diani Beach (2).jpg"
+                src="/Diani Beach copy.jpg"
                 alt="Luxury beach resort at Diani Beach"
-                className="w-full h-48 object-cover object-center"
+                className="w-full h-48 object-cover object-center brightness-110 contrast-105"
               />
               <div className="p-8">
                 <h3 className="font-bold text-blue-800 text-xl mb-2">
@@ -267,9 +269,9 @@ export const DianiBeach = () => {
             </div>
             <div className="relative">
               <img
-                src="/Diani Beach (2).jpg"
+                src="/Diani Beach copy.jpg"
                 alt="Local culture and crafts at Diani Beach"
-                className="rounded-xl shadow-lg w-full object-cover h-80"
+                className="rounded-xl shadow-lg w-full object-cover h-80 brightness-110 contrast-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-400/20 to-transparent rounded-xl"></div>
             </div>

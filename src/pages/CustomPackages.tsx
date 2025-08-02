@@ -105,7 +105,7 @@ export const CustomPackages = () => {
         language === 'en' ? 'Learn about wildlife' : 'تعلم عن الحياة البرية',
         language === 'en' ? 'Beach relaxation' : 'استرخاء على الشاطئ'
       ],
-      image: '/Diani Beach.jpg',
+      image: '/Diani Beach copy.jpg',
       price: language === 'en' ? 'From $1,200' : 'من $1,200'
     },
     {

@@ -22,7 +22,7 @@ export const Home = () => {
     {
       name: language === 'en' ? 'Diani Beach' : 'شاطئ ديان',
       description: language === 'en' ? 'White Sandy Beaches & Ocean Adventures' : 'الشواطئ الرملية البيضاء ومغامرات المحيط',
-      image: '/Diani Beach.jpg',
+      image: '/Diani Beach copy.jpg',
       link: '/destinations/diani-beach'
     }
   ];

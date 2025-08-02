@@ -33,7 +33,7 @@ export const destinations = (t: (key: string) => string) => [
   {
     name: t('dianiBeach'),
     description: t('dianiBeachDesc'),
-    image: '/Diani Beach.jpg',
+    image: '/Diani Beach copy.jpg',
     link: '/destinations/diani-beach'
   }
 ];
