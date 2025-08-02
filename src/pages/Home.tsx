@@ -96,10 +96,12 @@ export const Home = () => {
                   <img
                     src={destination.image}
                     alt={destination.name}
-                    className="w-full h-64 md:h-80 object-cover object-center"
+                    className="w-full h-64 md:h-80 object-cover object-center brightness-110 contrast-105"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                {/* Additional brightness overlay */}
+                <div className="absolute inset-0 bg-white/5" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <h3 className="text-xl md:text-2xl font-bold mb-2">{destination.name}</h3>
                   <p className="text-base md:text-lg text-yellow-300">{destination.description}</p>
