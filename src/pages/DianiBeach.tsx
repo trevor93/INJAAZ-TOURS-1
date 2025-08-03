@@ -161,7 +161,7 @@ export const DianiBeach = () => {
                 <h3 className="font-bold text-blue-800 text-xl mb-2">
                   AfroChic Diani Beach Resort
                 </h3>
-                <p className="text-cyan-600 font-semibold mb-4">{language === 'en' ? 'Ultra Luxury' : 'فاخر جداً'} • $450/ليلة</p>
+                <p className="text-cyan-600 font-semibold mb-4">{language === 'en' ? 'Ultra Luxury' : 'فاخر جداً'} • {language === 'en' ? '$450/night' : '$450/ليلة'}</p>
                 <ul className="text-sm text-gray-600 space-y-2 mb-6">
                   <li>{language === 'en' ? '• Luxury beachfront villas' : '• فيلات فاخرة على الشاطئ مباشرة'}</li>
                   <li>{language === 'en' ? '• Private pools and international restaurants' : '• مسابح خاصة ومطاعم عالمية'}</li>
@@ -180,7 +180,7 @@ export const DianiBeach = () => {
                 <h3 className="font-bold text-blue-800 text-xl mb-2">
                   Diani Reef Beach Resort
                 </h3>
-                <p className="text-blue-600 font-semibold mb-4">{language === 'en' ? 'Luxury' : 'فاخر'} • $220/ليلة</p>
+                <p className="text-blue-600 font-semibold mb-4">{language === 'en' ? 'Luxury' : 'فاخر'} • {language === 'en' ? '$220/night' : '$220/ليلة'}</p>
                 <ul className="text-sm text-gray-600 space-y-2 mb-6">
                   <li>{language === 'en' ? '• Great location on the main beach' : '• موقع رائع على الشاطئ الرئيسي'}</li>
                   <li>{language === 'en' ? '• Swimming pools and various restaurants' : '• حمامات سباحة ومطاعم متنوعة'}</li>
@@ -199,7 +199,7 @@ export const DianiBeach = () => {
                 <h3 className="font-bold text-blue-800 text-xl mb-2">
                   Diani Beach Cottages
                 </h3>
-                <p className="text-green-600 font-semibold mb-4">{language === 'en' ? 'Mid-range' : 'متوسط'} • $120/ليلة</p>
+                <p className="text-green-600 font-semibold mb-4">{language === 'en' ? 'Mid-range' : 'متوسط'} • {language === 'en' ? '$120/night' : '$120/ليلة'}</p>
                 <ul className="text-sm text-gray-600 space-y-2 mb-6">
                   <li>{language === 'en' ? '• Comfortable African-style cottages' : '• كوخات مريحة بأسلوب أفريقي'}</li>
                   <li>{language === 'en' ? '• Tropical gardens and swimming pool' : '• حدائق استوائية وحمام سباحة'}</li>

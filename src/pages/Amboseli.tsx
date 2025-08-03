@@ -201,7 +201,7 @@ export const Amboseli = () => {
               />
               <div className="p-6">
                 <h3 className="font-bold text-green-800 text-lg mb-2">Amboseli Serena Safari Lodge</h3>
-                <p className="text-yellow-600 font-semibold mb-3">{language === 'en' ? 'Luxury' : 'فاخر'} • $320/ليلة</p>
+                <p className="text-yellow-600 font-semibold mb-3">{language === 'en' ? 'Luxury' : 'فاخر'} • {language === 'en' ? '$320/night' : '$320/ليلة'}</p>
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>{language === 'en' ? '• Direct view of Kilimanjaro' : '• إطلالة مباشرة على كيليمنجارو'}</li>
                   <li>{language === 'en' ? '• Swimming pool and gourmet restaurant' : '• حمام سباحة ومطعم فاخر'}</li>
@@ -219,7 +219,7 @@ export const Amboseli = () => {
               />
               <div className="p-6">
                 <h3 className="font-bold text-green-800 text-lg mb-2">Amboseli Sopa Lodge</h3>
-                <p className="text-green-600 font-semibold mb-3">{language === 'en' ? 'Mid-range' : 'متوسط'} • $180/ليلة</p>
+                <p className="text-green-600 font-semibold mb-3">{language === 'en' ? 'Mid-range' : 'متوسط'} • {language === 'en' ? '$180/night' : '$180/ليلة'}</p>
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>{language === 'en' ? '• Excellent location in the heart of the park' : '• موقع ممتاز في قلب الحديقة'}</li>
                   <li>{language === 'en' ? '• Comfortable rooms with views' : '• غرف مريحة مع إطلالة'}</li>
@@ -237,7 +237,7 @@ export const Amboseli = () => {
               />
               <div className="p-6">
                 <h3 className="font-bold text-green-800 text-lg mb-2">Amboseli Kimana Camp</h3>
-                <p className="text-blue-600 font-semibold mb-3">{language === 'en' ? 'Budget' : 'اقتصادي'} • $80/ليلة</p>
+                <p className="text-blue-600 font-semibold mb-3">{language === 'en' ? 'Budget' : 'اقتصادي'} • {language === 'en' ? '$80/night' : '$80/ليلة'}</p>
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>{language === 'en' ? '• Comfortable and eco-friendly camp' : '• مخيم مريح وصديق للبيئة'}</li>
                   <li>{language === 'en' ? '• Fully equipped tents' : '• خيام مجهزة بالكامل'}</li>
